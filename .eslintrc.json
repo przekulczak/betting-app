@@ -25,6 +25,7 @@
         "endOfLine": "auto"
       }
     ],
+    "jsx-a11y/label-has-associated-control": "off",
     "no-else-return": "off",
     "react/no-unescaped-entities": "off",
     "import/no-extraneous-dependencies": "off",

@@ -6,12 +6,9 @@ export const HeaderWrapper = styled.header`
   border-left: 4px solid ${variables.colorAccent};
   padding-left: ${variables.mainSpacing};
   margin-bottom: ${variables.bigSpacing};
-  @media ${device.laptop} {
-    margin-bottom: ${variables.mainSpacing};
-  }
 `;
 
 export const HeaderHeader = styled.h1`
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 `;

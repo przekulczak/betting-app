@@ -6,7 +6,7 @@ export const SpinnerWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  margin-top: ${variables.mainSpacing};
 `;
 
 export const StyledSpinner = styled.svg`
@@ -15,7 +15,7 @@ export const StyledSpinner = styled.svg`
   width: 200px;
   height: 200px;
   & .path {
-    stroke: ${variables.colorBackgroundBox};
+    stroke: ${variables.colorAccent};
     stroke-linecap: round;
     animation: dash 1.5s ease-in-out infinite;
   }
