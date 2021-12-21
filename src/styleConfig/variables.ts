@@ -3,7 +3,7 @@ export const variables = {
   mainSpacing: '10px',
   smallSpacing: '5px',
   bigSpacing: '20px',
-  biggerSpacing: '40px',
+  biggerSpacing: '100px',
   mainPadding: '10px',
   colorBackground: '#d6d6d6',
   colorBackgroundBox: '#fff',

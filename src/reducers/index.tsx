@@ -1,17 +1,14 @@
-import { combineReducers } from 'redux';
-import locationReducer from './location';
-import historyReducer from './history';
-import loadingReducer from './loading';
-import menuReducer from './menu';
-import { RootState, ApplicationActions } from './types';
+import { combineReducers } from '@reduxjs/toolkit';
+import racesReducer from './races';
+import participantsReducer from './participants';
 
 const appReducer = combineReducers({
-  location: locationReducer,
-  history: historyReducer,
-  loading: loadingReducer,
-  menu: menuReducer,
+  races: racesReducer,
+  participants: participantsReducer,
 });
 
-const rootReducer = (state: RootState, action: ApplicationActions) => appReducer(state, action);
+const rootReducer = (state: any, action: any) => appReducer(state, action);
+
+export type RootState = ReturnType<typeof rootReducer>;
 
 export default rootReducer;

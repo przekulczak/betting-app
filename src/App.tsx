@@ -5,8 +5,8 @@ import { createBrowserHistory } from 'history';
 import { PersistGate } from 'redux-persist/integration/react';
 import { ResetCss } from './styleConfig/reset';
 import { BasicStyles } from './styleConfig/basic-styles';
-import { Dashboard, Error } from './views';
-import { store, persistor } from './utils/reduxConfig';
+import { Error, AllRaces, SingleRace } from './views';
+import { store, persistor } from './config/reduxConfig';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const history = createBrowserHistory({ basename: '/' });
@@ -20,8 +20,9 @@ const App = () => {
         <BasicStyles />
         <Router history={history}>
           <Switch>
-            <Route exact path="/error" component={Error} />
-            <Route path="/" component={Dashboard} />
+            <Route exact path="/" component={AllRaces} />
+            <Route path="/race/:id" component={SingleRace} />
+            <Route path="/error" component={Error} />
           </Switch>
         </Router>
       </PersistGate>

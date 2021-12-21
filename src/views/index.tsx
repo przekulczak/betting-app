@@ -1,4 +1,5 @@
-import Dashboard from './Dashboard';
 import Error from './Error';
+import AllRaces from './AllRaces';
+import SingleRace from './SingleRaces';
 
-export { Dashboard, Error };
+export { Error, AllRaces, SingleRace };
